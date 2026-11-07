@@ -1,0 +1,30 @@
+cat > index.html <<'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Serverless Application</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Serverless Connect</h1>
+<p>Powered by AWS Lambda and API Gateway</p>
+</header>
+<main>
+<div class="container">
+<h2>Welcome to Serverless API</h2>
+<p>Enter your name to test our live AWS Lambda API.</p>
+<input type="text" id="name" placeholder="Enter your name">
+<button onclick="callAPI()">Call API</button>
+<div id="result">Your API response will appear here.</div>
+</div>
+</main>
+<footer>
+<p>Built with AWS Lambda | API Gateway | JavaScript</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+EOF
